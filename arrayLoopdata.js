@@ -6,10 +6,21 @@ var input = [
             ]
 
 function dataHandling(data){
-return "Nomor ID:" + data[0][0] + "\n" + "Nama Lengkap:"  + data[0][1] + "\n" + "TTL:" + data[0][2] + " "  + data[0][3] + "\n" + "Hobi:" + data[0][4]
-+ "\n\n" + "Nomor ID:" + data[1][0] + "\n" + "Nama Lengkap:"  + data[1][1] + "\n" + "TTL:" + data[1][2] + " "  + data[1][3] + "\n" + "Hobi:" + data[0][4]
-+ "\n\n" + "Nomor ID:" + data[2][0] + "\n" + "Nama Lengkap:"  + data[2][1] + "\n" + "TTL:" + data[2][2] + " "  + data[2][3] + "\n" + "Hobi:" + data[2][4]
-+ "\n\n" + "Nomor ID:" + data[3][0] + "\n" + "Nama Lengkap:"  + data[3][1] + "\n" + "TTL:" + data[3][2] + " "  + data[3][3] + "\n" + "Hobi:" + data[3][4]
+var data = input
+for (var a =  0; a < data.length; a = a + 1){
+  for (var b = 0; b < data[a].length; b = b + 1){
+
+      if( b === 0 ){
+        return ("Nomor ID :" + input[a][b])
+      }else if( b === 1){
+        return ("Nama Lengkap :" + input[a][b])
+      }else if( b === 2){
+        return ("TTL : " + input[a][b] + " " + input[a][b + 1]);
+      }else if( b === 4){
+        return ("Hobi: " + input[a][b])
+      }
+  }
+}
 
 }
 
