@@ -20,7 +20,7 @@ hurufPertama.sort(function (a, b){return a > b})
       group.push(animals[k])
     }
   }
-  groups.push(group
+  groups.push(group)
 }
 return groups
 
@@ -32,3 +32,4 @@ console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
 // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
 // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda'], ['unta'] ]
+
