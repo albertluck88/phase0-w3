@@ -3,9 +3,7 @@ function groupAnimals(animals) {
   let hurufPertama = []
   let duplikat = []
   for(let i = 0; i < animals.length; i++){
-      if(animals.indexOf(animals[i][0]) === -1){
       hurufPertama.push(animals[i][0])
-      }
   } 
 hurufPertama.sort(function (a, b){return a > b})
   for (let o = 0 ; o < hurufPertama.length; o++){
@@ -22,7 +20,7 @@ hurufPertama.sort(function (a, b){return a > b})
       group.push(animals[k])
     }
   }
-  groups.push(group) 
+  groups.push(group
 }
 return groups
 
